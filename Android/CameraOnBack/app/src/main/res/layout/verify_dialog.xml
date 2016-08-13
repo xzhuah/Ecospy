@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/DialogIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/messageTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/messageTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/dismissBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:text="OK"/>
+
+</LinearLayout>

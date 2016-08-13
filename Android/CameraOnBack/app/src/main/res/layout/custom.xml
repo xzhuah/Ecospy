@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llToast"
+    android:theme="@style/Transparent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llToastContent"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginBottom="1dip"
+        android:layout_width="wrap_content"
+        android:padding="15dip"
+        android:background="#556BC172" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="#3875D6"
+            android:textColorLink="#FF8000"
+            android:id="@+id/tvTextToast" />
+    </LinearLayout>
+</LinearLayout>
