@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9FE1E9</color>
+    <color name="colorPrimaryDark">#4283A1</color>
+    <color name="colorAccent">#F3B136</color>
+    <color name="transparent">#6BC172</color>
+    <color name="CameraTextColor">#ffffff</color>
+    <color name="cameraBack">#3AB45C</color>
+</resources>
