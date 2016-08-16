@@ -44,7 +44,7 @@ public class PictureUploader {
             // 读取返回数据
             StringBuffer strBuf = new StringBuffer();
             BufferedReader reader = new BufferedReader(new InputStreamReader(
-                    conn.getInputStream()));
+                    conn.getInputStream(),"UTF-8"));
             String line = null;
             while ((line = reader.readLine()) != null) {
                 strBuf.append(line).append("\n");
