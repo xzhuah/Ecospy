@@ -6,20 +6,94 @@
     android:layout_height="match_parent"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="team9.camp.microsoft.ecospy.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="team9.camp.microsoft.ecospy.GameMain"
+    tools:showIn="@layout/app_bar_game">
 
     <ImageView
-        android:id="@+id/back1"
+        android:id="@+id/back2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/backwhite"
         android:scaleType="fitXY"/>
+    <GridLayout
+        android:id="@+id/row1"
+        android:layout_above="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:rowCount="1"
+        android:columnCount="3"  >
+    <ImageButton
+        android:id="@+id/gamebtn_11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+    />
+    <ImageButton
+        android:id="@+id/gamebtn_12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <ImageButton
+        android:id="@+id/gamebtn_13"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/row1"
+
+        android:rowCount="1"
+        android:columnCount="3"  >
+        <ImageButton
+            android:id="@+id/gamebtn_21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <ImageButton
+            android:id="@+id/gamebtn_22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <ImageButton
+            android:id="@+id/gamebtn_23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/row2"
+        android:rowCount="1"
+        android:columnCount="3"  >
+        <ImageButton
+            android:id="@+id/gamebtn_31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <ImageButton
+            android:id="@+id/gamebtn_32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <ImageButton
+            android:id="@+id/gamebtn_33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </GridLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:orientation="horizontal"
-        android:layout_alignBottom="@+id/back1"
+        android:layout_alignBottom="@+id/back2"
         android:gravity="center"
         android:background="#eefafb"
         >
@@ -30,10 +104,10 @@
             android:gravity="center"
             >
             <ImageButton
-                android:id="@+id/btn1_1"
+                android:id="@+id/btn2_1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/btn1_2"
+                android:src="@drawable/btn1"
                 android:background="#00000000"
                 android:scaleType="fitCenter"
                 />
@@ -42,17 +116,17 @@
                 android:layout_height="wrap_content"
                 android:text="我"
                 android:gravity="center"/>
-            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/btn1_2"
+                android:id="@+id/btn2_2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/btn2"
+                android:src="@drawable/btn2_2"
                 android:background="#00000000"
                 android:scaleType="fitCenter"
                 />
@@ -68,7 +142,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/btn1_3"
+                android:id="@+id/btn2_3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/btn3"
@@ -87,7 +161,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/btn1_4"
+                android:id="@+id/btn2_4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/btn4"
@@ -106,7 +180,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/btn1_5"
+                android:id="@+id/btn2_5"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/btn5"
@@ -122,6 +196,7 @@
 
 
     </LinearLayout>
+
 
 
 </RelativeLayout>

@@ -118,7 +118,17 @@ public class CameraMain extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        //  releaseCamera();              // release the camera immediately on pause event
+        releaseCamera();              // release the camera immediately on pause event
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseCamera();              // release the camera immediately on pause event
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        releaseCamera();              // release the camera immediately on pause event
     }
 
 

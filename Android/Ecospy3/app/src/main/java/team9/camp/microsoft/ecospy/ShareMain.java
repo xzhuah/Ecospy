@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity
+public class ShareMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private ImageButton btn1,btn2,btn3,btn4,btn5;
     private View.OnClickListener navBar=new View.OnClickListener(){
@@ -26,16 +26,15 @@ public class MainActivity extends AppCompatActivity
                 case R.id.btn3_1:
                 case R.id.btn4_1:
                 case R.id.btn5_1:
-
-                   // startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    finish();
                     break;
                 case R.id.btn1_2:
                 case R.id.btn2_2:
                 case R.id.btn3_2:
                 case R.id.btn4_2:
                 case R.id.btn5_2:
-
-                    startActivity(new Intent(MainActivity.this, GameMain.class));
+                    startActivity(new Intent(getApplicationContext(), GameMain.class));
                     finish();
                     break;
                 case R.id.btn1_3:
@@ -43,15 +42,15 @@ public class MainActivity extends AppCompatActivity
                 case R.id.btn3_3:
                 case R.id.btn4_3:
                 case R.id.btn5_3:
-                    startActivity(new Intent(getApplicationContext(),ShareMain.class));
-                    finish();
+                    //startActivity(new Intent(getApplicationContext(),ShareMain.class));
+                   // finish();
                     break;
                 case R.id.btn1_4:
                 case R.id.btn2_4:
                 case R.id.btn3_4:
                 case R.id.btn4_4:
                 case R.id.btn5_4:
-                    startActivity(new Intent(getApplicationContext(),RecyleMain.class));
+                     startActivity(new Intent(getApplicationContext(),RecyleMain.class));
                     finish();
                     break;
                 case R.id.btn1_5:
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity
                 case R.id.btn3_5:
                 case R.id.btn4_5:
                 case R.id.btn5_5:
-                    startActivity(new Intent(getApplicationContext(),QuitMain.class));
+                    startActivity(new Intent(getApplicationContext(), QuitMain.class));
                     finish();
                     break;
                 default:
@@ -70,8 +69,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_share);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_share);
         setSupportActionBar(toolbar);
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -88,31 +87,30 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_share);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view_share);
         navigationView.setNavigationItemSelectedListener(this);
 
-        btn1=(ImageButton)findViewById(R.id.btn1_1);
-        btn2=(ImageButton)findViewById(R.id.btn1_2);
-        btn3=(ImageButton)findViewById(R.id.btn1_3);
-        btn4=(ImageButton)findViewById(R.id.btn1_4);
-        btn5=(ImageButton)findViewById(R.id.btn1_5);
+        btn1=(ImageButton)findViewById(R.id.btn3_1);
+        btn2=(ImageButton)findViewById(R.id.btn3_2);
+        btn3=(ImageButton)findViewById(R.id.btn3_3);
+        btn4=(ImageButton)findViewById(R.id.btn3_4);
+        btn5=(ImageButton)findViewById(R.id.btn3_5);
         btn1.setOnClickListener(navBar);
         btn2.setOnClickListener(navBar);
         btn3.setOnClickListener(navBar);
         btn4.setOnClickListener(navBar);
         btn5.setOnClickListener(navBar);
-
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_share);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -164,7 +162,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_share);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

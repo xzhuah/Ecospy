@@ -21,7 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraMain"  android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CameraMain"  android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".LoginActivity"  android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".GameMain"  android:label="@string/app_name"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ShareMain"  android:label="@string/app_name"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".RecyleMain"  android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QuitMain"  android:label="@string/app_name"  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
