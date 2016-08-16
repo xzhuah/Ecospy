@@ -89,7 +89,7 @@
             android:layout_marginTop="26dp"
             android:background="@drawable/shape2"
             android:text="@string/action_sign_in"
-            android:textColor="@color/abc_background_cache_hint_selector_material_light"
+            android:textColor="#ffffff"
             android:textSize="18dp"
             android:gravity="center"/>
 
