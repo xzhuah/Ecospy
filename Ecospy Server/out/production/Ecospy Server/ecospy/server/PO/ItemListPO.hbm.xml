@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-2-25 21:24:07 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ecospy.server.PO.ItemListPO" table="ITEMLISTPO">
+        <id name="userID" type="java.lang.String">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="item_0_num" type="int">
+            <column name="ITEM_0_NUM"/>
+        </property>
+        <property name="item_1_num" type="int">
+            <column name="ITEM_1_NUM"/>
+        </property>
+        <property name="item_2_num" type="int">
+            <column name="ITEM_2_NUM"/>
+        </property>
+        <property name="item_3_num" type="int">
+            <column name="ITEM_3_NUM"/>
+        </property>
+        <property name="item_4_num" type="int">
+            <column name="ITEM_4_NUM"/>
+        </property>
+        <property name="item_5_num" type="int">
+            <column name="ITEM_5_NUM"/>
+        </property>
+        <property name="item_6_num" type="int">
+            <column name="ITEM_6_NUM"/>
+        </property>
+        <property name="item_7_num" type="int">
+            <column name="ITEM_7_NUM"/>
+        </property>
+        <property name="item_8_num" type="int">
+            <column name="ITEM_8_NUM"/>
+        </property>
+        <property name="item_9_num" type="int">
+            <column name="ITEM_9_NUM"/>
+        </property>
+        <property name="item_10_num" type="int">
+            <column name="ITEM_10_NUM"/>
+        </property>
+        <property name="item_11_num" type="int">
+            <column name="ITEM_11_NUM"/>
+        </property>
+        <property name="item_12_num" type="int">
+            <column name="ITEM_12_NUM"/>
+        </property>
+        <property name="item_13_num" type="int">
+            <column name="ITEM_13_NUM"/>
+        </property>
+        <property name="item_14_num" type="int">
+            <column name="ITEM_14_NUM"/>
+        </property>
+        <property name="item_15_num" type="int">
+            <column name="ITEM_15_NUM"/>
+        </property>
+        <property name="item_16_num" type="int">
+            <column name="ITEM_16_NUM"/>
+        </property>
+        <property name="item_17_num" type="int">
+            <column name="ITEM_17_NUM"/>
+        </property>
+        <property name="item_18_num" type="int">
+            <column name="ITEM_18_NUM"/>
+        </property>
+        <property name="item_19_num" type="int">
+            <column name="ITEM_19_NUM"/>
+        </property>
+        <property name="item_20_num" type="int">
+            <column name="ITEM_20_NUM"/>
+        </property>
+        <property name="item_21_num" type="int">
+            <column name="ITEM_21_NUM"/>
+        </property>
+        <property name="item_22_num" type="int">
+            <column name="ITEM_22_NUM"/>
+        </property>
+        <property name="item_23_num" type="int">
+            <column name="ITEM_23_NUM"/>
+        </property>
+        <property name="item_24_num" type="int">
+            <column name="ITEM_24_NUM"/>
+        </property>
+        <property name="item_25_num" type="int">
+            <column name="ITEM_25_NUM"/>
+        </property>
+        <property name="item_26_num" type="int">
+            <column name="ITEM_26_NUM"/>
+        </property>
+        <property name="item_27_num" type="int">
+            <column name="ITEM_27_NUM"/>
+        </property>
+        <property name="item_28_num" type="int">
+            <column name="ITEM_28_NUM"/>
+        </property>
+        <property name="item_29_num" type="int">
+            <column name="ITEM_29_NUM"/>
+        </property>
+        <property name="item_30_num" type="int">
+            <column name="ITEM_30_NUM"/>
+        </property>
+        <property name="item_31_num" type="int">
+            <column name="ITEM_31_NUM"/>
+        </property>
+        <property name="item_32_num" type="int">
+            <column name="ITEM_32_NUM"/>
+        </property>
+        <property name="item_33_num" type="int">
+            <column name="ITEM_33_NUM"/>
+        </property>
+        <property name="item_34_num" type="int">
+            <column name="ITEM_34_NUM"/>
+        </property>
+        <property name="item_35_num" type="int">
+            <column name="ITEM_35_NUM"/>
+        </property>
+        <property name="item_36_num" type="int">
+            <column name="ITEM_36_NUM"/>
+        </property>
+        <property name="item_37_num" type="int">
+            <column name="ITEM_37_NUM"/>
+        </property>
+        <property name="item_38_num" type="int">
+            <column name="ITEM_38_NUM"/>
+        </property>
+        <property name="item_39_num" type="int">
+            <column name="ITEM_39_NUM"/>
+        </property>
+        <property name="item_40_num" type="int">
+            <column name="ITEM_40_NUM"/>
+        </property>
+        <property name="item_41_num" type="int">
+            <column name="ITEM_41_NUM"/>
+        </property>
+        <property name="item_42_num" type="int">
+            <column name="ITEM_42_NUM"/>
+        </property>
+        <property name="item_43_num" type="int">
+            <column name="ITEM_43_NUM"/>
+        </property>
+        <property name="item_44_num" type="int">
+            <column name="ITEM_44_NUM"/>
+        </property>
+        <property name="item_45_num" type="int">
+            <column name="ITEM_45_NUM"/>
+        </property>
+        <property name="item_46_num" type="int">
+            <column name="ITEM_46_NUM"/>
+        </property>
+        <property name="item_47_num" type="int">
+            <column name="ITEM_47_NUM"/>
+        </property>
+        <property name="item_48_num" type="int">
+            <column name="ITEM_48_NUM"/>
+        </property>
+        <property name="item_49_num" type="int">
+            <column name="ITEM_49_NUM"/>
+        </property>
+        <property name="item_50_num" type="int">
+            <column name="ITEM_50_NUM"/>
+        </property>
+    </class>
+</hibernate-mapping>

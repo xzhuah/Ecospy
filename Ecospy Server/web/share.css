@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(ecospy.png);
+}
+/*#hnm{
+	background-color: #f9f9f9;
+}*/
+nav a{
+	font-weight:600;
+	background-color:#69B7DB ;	
+	font-style:italic;
+	font-family:Verdana, Geneva, sans-serif;	
+	color:#B2B700;
+	width: 145px;
+}
+nav a:hover {
+	font-style:normal;	
+	color:#DEE326;
+	background-color: #AA37AD;	
+	width: 166px;	
+}
+.segment{
+	font-family:Geneva, sans-serif;
+	color:#000000;
+}
+.little_title{
+	color:#F48641;
+}
+.im
+{
+	height:500px;
+	width:500px;
+	padding-bottom: 30px;
+}
+.listTable{
+	text-align:center;
+	
+}
+.skretch_title{
+	width: 240px;
+	font-weight: normal;
+	color: #fdefed;
+	background-color: #C9A2F6;
+}
+.skretch_title:hover{
+	width: 700px;
+	border-radius:50px;
+}
+.designer_info{
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.special_list{
+	text-align: center;
+	padding_left:50px;
+}
+.special_list a{
+	font-style:normal;
+	font-variant:normall;
+	font-family:Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	color:#098800;
+	padding-bottom:20px;
+	
+}
+
+.special_list a:hover{ 
+	text-decoration:none;
+
+	color: red;
+}
+.special_list li{
+	padding-bottom:50px;
+	
+}
+.mlist{
+	font-size: 80px;
+	padding-bottom: 200px;
+	padding-left: 30px;
+}
+.window_box{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 36px;
+    width: 540px;
+	height: 240px;
+    padding: 8px 0;
+    border-radius: 3px;
+    border: 2px #bbb solid;
+	
+}
+
+.window_box_cover{
+	opacity: 0;
+	width: 540px;
+	height: 140px;
+	background: #F8F8F8;
+	color: #e73319;
+	font-size: 20px;
+	font-weight: normal;
+}
+.window_box_cover:hover{
+	opacity: 0.55;
+}
+
+
+#hnm
+{
+    width: 900px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-bottom: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; 
+    -webkit-box-shadow: 0 4px 10px .5px #575757;
+            box-shadow: 0 4px 10px .5px #575757;
+}
+
+#logo{	
+	width: 900px;
+	height:300px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-bottom: 0;	
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;			
+}
+
+nav{
+	padding-top:272px;
+}
+
+nav ul{
+	margin: 0;
+    padding: 0;
+    list-style-type: none;	
+}
+
+nav li{
+    float: left;
+    width: 225px;
+}
+
+nav a{
+    border-radius: 3px;
+    display: block;
+    padding: 5px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease-in-out;
+       -moz-transition: all .25s ease-in-out;
+         -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;			
+}
+
+nav a:hover {
+    border-radius: 21px;  
+}
+
+main{
+    clear: left;
+	background:#F8F8F8;
+    width: 900px;	
+    margin: 0 auto;
+    border-bottom-left-radius: 0;
+}
+.segment{
+	padding:10px 20px 10px 20px;
+}
+
+.little_title{
+	text-align:center;
+	border-radius:50px;
+	-o-transition: background-color .5s linear;
+    -webkit-transition: background-color .5s linear;
+    -moz-transition: background-color .5s linear;
+    transition:  background-color .5s linear;
+	
+}
+.skretch_title{
+	position: relative;
+    left: -20px;
+    
+    padding: 5px 0 5px 25px;
+    margin-right: 5px;
+	margin-bottom: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px #626262;
+            box-shadow: 0 2px 2px #626262;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;	
+}
+
+.skretch_title:hover{	
+	left:-25px;
+}
+
+.designer{
+	visibility:hidden;
+}
+
+.designer2{
+	margin-left:100px;
+	margin-right:100px;
+}
+
+.designer_info{
+	margin-left:60px;
+	margin-right:60px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+
+.window_box_cover{
+	z-index: 1;
+	display: block;
+	position: absolute;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s;
+	text-align: center;
+	margin: 0;
+}
