@@ -19,6 +19,9 @@ public class UserPO {
 
     public static HashMap<Integer, Integer> getItemList(String str) {
         HashMap<Integer, Integer> result = new HashMap<Integer, Integer>();
+        for(int i=0;i<100;i++){
+            result.put(i,0);
+        }
         int number=-1, count;
        while(str.contains("_")){
            str=str.substring(str.indexOf("_")+1,str.length());

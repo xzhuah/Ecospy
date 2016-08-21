@@ -511,14 +511,19 @@ public class GameMain extends AppCompatActivity
             buttons[row][col].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     ImageButton ib=  ((ImageButton) findViewById(currentID));
                    ib.setBackgroundResource((int) (ItemMap.Id2RID.get(v.getTag())));
                    ib.setTag(v.getTag());
                     int resultid=getCurrentProduct();
+
                     rst1.setTag(resultid);
                     if(resultid!=-1){
                         num1.setText("1");
                         rst1.setBackgroundResource(ItemMap.Id2RID.get(resultid));
+                    }else{
+                        initButton(rst1);
+                        num1.setText("0");
                     }
                     dialog.dismiss();
                     dialog=null;

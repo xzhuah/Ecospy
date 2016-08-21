@@ -315,10 +315,14 @@ public class CameraMain extends AppCompatActivity {
                 if (dialog != null && dialog.isShowing()) {
                     dialog.dismiss();
                     if(type==1){
-                        Toast.makeText(CameraMain.this,"已回收电子产品1件，得到玻璃，金属，塑料各1件",Toast.LENGTH_LONG).show();
-                        UserPO.itembag.put(1, UserPO.itembag.get(1) + 1);
-                        UserPO.itembag.put(2,UserPO.itembag.get(2)+1);
-                        UserPO.itembag.put(4,UserPO.itembag.get(4)+1);
+                        try {
+                            Toast.makeText(CameraMain.this, "已回收电子产品1件，得到玻璃，金属，塑料各1件", Toast.LENGTH_LONG).show();
+                            UserPO.itembag.put(1, UserPO.itembag.get(1) + 1);
+                            UserPO.itembag.put(2, UserPO.itembag.get(2) + 1);
+                            UserPO.itembag.put(4, UserPO.itembag.get(4) + 1);
+                        }catch(Exception e){
+
+                        }
                     }else if(type==2){
                         try {
                             Toast.makeText(CameraMain.this, "已回收电脑1台，得到金属2件，塑料1件，玻璃1件", Toast.LENGTH_LONG).show();
@@ -341,7 +345,7 @@ public class CameraMain extends AppCompatActivity {
 
                     }else if(type==4){
                         try {
-                            Toast.makeText(CameraMain.this, "已回收瓶子，得到玻璃3件", Toast.LENGTH_LONG).show();
+                            Toast.makeText(CameraMain.this, "已回收玻璃制品，得到玻璃3件", Toast.LENGTH_LONG).show();
                             UserPO.itembag.put(1, UserPO.itembag.get(1) + 3);
 
                         }catch (Exception e){
@@ -379,6 +383,16 @@ public class CameraMain extends AppCompatActivity {
                         try {
                             Toast.makeText(CameraMain.this, "已回收衣物一件，得到木材2件", Toast.LENGTH_LONG).show();
                             UserPO.itembag.put(3, UserPO.itembag.get(3) + 2);
+
+                        }catch (Exception e){
+
+                        }
+
+                    }
+                    else if(type==9){
+                        try {
+                            Toast.makeText(CameraMain.this, "已回收金属制品一件，得到金属3件", Toast.LENGTH_LONG).show();
+                            UserPO.itembag.put(2, UserPO.itembag.get(2) + 3);
 
                         }catch (Exception e){
 

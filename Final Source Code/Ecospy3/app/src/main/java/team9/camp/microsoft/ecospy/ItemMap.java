@@ -123,6 +123,7 @@ public class ItemMap {
         tagStr.put("electronics","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
         tagStr.put("mouse","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
         tagStr.put("electronic","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
+        tagStr.put("connect","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
 
         tagStr.put("computer","<a href=\"https://www.wastereduction.gov.hk/tc/workplace/crp_intro.htm\">电脑</a><br>電腦產品含有可以對人體和環境有害的物質。因此，我們不應隨意更換電腦，以助減少產生電腦廢物。如果確實有需要更換，則應盡量把舊電腦循環再用和回收再造。電腦所含的零件和物料，例如金屬和塑膠等，其實可以回收再用。一些廢棄的電腦只要修理妥當，更可翻新成二手機再用。");
         tagStr.put("laptop","<a href=\"https://www.wastereduction.gov.hk/tc/workplace/crp_intro.htm\">电脑</a><br>電腦產品含有可以對人體和環境有害的物質。因此，我們不應隨意更換電腦，以助減少產生電腦廢物。如果確實有需要更換，則應盡量把舊電腦循環再用和回收再造。電腦所含的零件和物料，例如金屬和塑膠等，其實可以回收再用。一些廢棄的電腦只要修理妥當，更可翻新成二手機再用。");
@@ -150,10 +151,15 @@ public class ItemMap {
         tagStr.put("clothes","<a href=\"http://baike.baidu.com/view/1749752.htm\">衣物</a>綠色和平指出香港人每年棄置11萬噸紡織物，相等於每分鐘拋棄約1400件T-shirt，足以鋪滿25000個香港大球場。");
         tagStr.put("clothing","<a href=\"http://baike.baidu.com/view/1749752.htm\">衣物</a>綠色和平指出香港人每年棄置11萬噸紡織物，相等於每分鐘拋棄約1400件T-shirt，足以鋪滿25000個香港大球場");
 
+        tagStr.put("window","<a href=\"http://www.epd.gov.hk/epd/sc_chi/environmentinhk/waste/eco_responsibility/gcrp_pilot_ssp_ha.html\">窗玻璃</a>玻璃，玲瓏剔透，無毒可重用，壓碎後又可製成環保磚或鋪路，可是它的回收價值比紙皮、膠樽還要低");
+        tagStr.put("key","<a href=\"http://baike.baidu.com/view/2013629.htm\">金属</a>金属回收是指从废旧金属中分离出来的有用物质经过物理或机械加工成为再生利用的制品，是从回收、拆解、到再生利用的一条产业链。");
+
+
 
         tagType.put("electronics",1);
         tagType.put("electronic",1);
         tagType.put("mouse",1);
+        tagType.put("connect",1);
 
         tagType.put("computer",2);
         tagType.put("laptop",2);
@@ -167,6 +173,7 @@ public class ItemMap {
         tagType.put("can",4);
         tagType.put("cup",4);
         tagType.put("coffee",4);
+        tagType.put("window",4);
 
         tagType.put("wooden",5);
         tagType.put("rack",5);
@@ -177,6 +184,8 @@ public class ItemMap {
 
         tagType.put("clothes",8);
         tagType.put("clothing",8);
+
+        tagType.put("key",9);
 
 
 
