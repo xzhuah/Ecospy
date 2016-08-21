@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Ecospy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Start Journey</string>
+    <string name="action_sign_in_short">Start Journey</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="subscription_key">a69c03eb83a44ec789045ffee811a228</string>
+    <string name="add_subscription_key_tip_title">Subscription Key is Needed</string>
+    <string name="add_subscription_key_tip">Please put your subscription key to source file \"app/res/values/strings.xml\" to enable Vision API calls.</string>
+
+
+    <string name="title_activity_analyze">Analyze Image</string>
+    <string name="title_activity_analyze_domain">Analyze Image In Domain</string>
+    <string name="title_activity_describe">Describe Image</string>
+    <string name="title_activity_recognize">Recognize Text</string>
+    <string name="title_activity_thumbnail">Thumbnail Image</string>
+
+    <!-- Select image activity -->
+    <string name="select_an_image">Select an Image</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="select_image_in_album">From Gallery</string>
+</resources>
