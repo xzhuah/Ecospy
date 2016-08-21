@@ -121,6 +121,8 @@ public class ItemMap {
         Id2RID.put(50,R.drawable.smart_ring);
 
         tagStr.put("electronics","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
+        tagStr.put("mouse","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
+        tagStr.put("electronic","<a href=\"http://baike.baidu.com/subview/1379716/1379716.htm\">电子产品</a><br>电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑");
 
         tagStr.put("computer","<a href=\"https://www.wastereduction.gov.hk/tc/workplace/crp_intro.htm\">电脑</a><br>電腦產品含有可以對人體和環境有害的物質。因此，我們不應隨意更換電腦，以助減少產生電腦廢物。如果確實有需要更換，則應盡量把舊電腦循環再用和回收再造。電腦所含的零件和物料，例如金屬和塑膠等，其實可以回收再用。一些廢棄的電腦只要修理妥當，更可翻新成二手機再用。");
         tagStr.put("laptop","<a href=\"https://www.wastereduction.gov.hk/tc/workplace/crp_intro.htm\">电脑</a><br>電腦產品含有可以對人體和環境有害的物質。因此，我們不應隨意更換電腦，以助減少產生電腦廢物。如果確實有需要更換，則應盡量把舊電腦循環再用和回收再造。電腦所含的零件和物料，例如金屬和塑膠等，其實可以回收再用。一些廢棄的電腦只要修理妥當，更可翻新成二手機再用。");
@@ -150,6 +152,8 @@ public class ItemMap {
 
 
         tagType.put("electronics",1);
+        tagType.put("electronic",1);
+        tagType.put("mouse",1);
 
         tagType.put("computer",2);
         tagType.put("laptop",2);

@@ -77,14 +77,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
         PictureUploader.context=this;
+        FileIO.context=this;
 
-//        try{
-//            new FileIO(this).writeFile("Hello.txt", "WHATEVE");
-//            String s=new FileIO(this).readFile("Hello.txt");
-//            mEmailSignInButton.setText(s);
-//        }catch (Exception e){
-//            Log.d("READ","Fail Reading");
-//        }
+
     }
     private ProgressDialog pd2;
     Handler myHandler2 = new Handler() {

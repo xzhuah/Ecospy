@@ -28,8 +28,11 @@ public class UserPO {
            if(str.contains("_")){
                num=Integer.parseInt(str.substring(0,str.indexOf(",")));
            }else{
-
-               num=Integer.parseInt(str.substring(0,str.indexOf(",")));
+                try {
+                    num = Integer.parseInt(str.substring(0, str.indexOf(",")));
+                }catch (Exception e){
+                    num=0;
+                }
 
            }
            result.put(id,num);
@@ -77,7 +80,7 @@ public class UserPO {
             public void run(){
                 //PictureUploader.updateUser(server, getJson());
                 try {
-                    new FileIO(context).writeFile("uesrInfo.txt", getJson());
+                    new FileIO().writeFile("uesrInfo.txt", getJson());
                 }catch (Exception e){
 
                 }

@@ -12,10 +12,8 @@ import java.io.InputStreamReader;
  */
 public class FileIO {
 
-    Context context;
-    public FileIO(Context context){
-        this.context=context;
-    }
+    public static Context context;
+
     public void writeFile(String fileName,String writestr) throws IOException{
         try{
 

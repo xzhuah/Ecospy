@@ -24,7 +24,7 @@ public class PictureUploader {
     public static Context context;
     public static String login(String urlStr,String name,String pass){
         try{
-            String result=new FileIO(context).readFile("uesrInfo.txt");
+            String result=new FileIO().readFile("uesrInfo.txt");
             if( result.equals(""))return "{\"item\":[{\"item_10_num\":0,\"item_5_num\":10,\"item_2_num\":10,\"item_13_num\":0,\"item_19_num\":0,\"item_4_num\":10,\"item_17_num\":0,\"item_8_num\":0,\"userID\":\"000002\",\"item_15_num\":0,\"item_6_num\":0,\"item_11_num\":0,\"item_1_num\":10,\"item_9_num\":0,\"item_18_num\":0,\"item_20_num\":0,\"item_3_num\":10,\"item_12_num\":0,\"item_14_num\":0,\"item_7_num\":0,\"item_16_num\":0}]}";
             else return result;
         }catch (Exception e){
@@ -83,7 +83,7 @@ public class PictureUploader {
     public static String load(String urlStr,String id){
 
         try{
-            String result=new FileIO(context).readFile("uesrInfo.txt");
+            String result=new FileIO().readFile("uesrInfo.txt");
             if( result.equals(""))return "{\"item\":[{\"item_10_num\":0,\"item_5_num\":10,\"item_2_num\":10,\"item_13_num\":0,\"item_19_num\":0,\"item_4_num\":10,\"item_17_num\":0,\"item_8_num\":0,\"userID\":\"000002\",\"item_15_num\":0,\"item_6_num\":0,\"item_11_num\":0,\"item_1_num\":10,\"item_9_num\":0,\"item_18_num\":0,\"item_20_num\":0,\"item_3_num\":10,\"item_12_num\":0,\"item_14_num\":0,\"item_7_num\":0,\"item_16_num\":0}]}";
             else return result;
         }catch (Exception e){
