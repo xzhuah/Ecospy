@@ -13,79 +13,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
+import team9.camp.microsoft.ecospy.cameraPack.CameraMain;
+import team9.camp.microsoft.ecospy.tool.NavSwitcher;
+
 public class QuitMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private ImageButton btn1,btn2,btn3,btn4,btn5;
-    private View.OnClickListener navBar=new View.OnClickListener(){
+    private View.OnClickListener navBar=new NavSwitcher(QuitMain.this,5);
 
-        @Override
-        public void onClick(View v) {
-            switch(v.getId()){
-                case R.id.btn1_1:
-                case R.id.btn2_1:
-                case R.id.btn3_1:
-                case R.id.btn4_1:
-                case R.id.btn5_1:
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                    finish();
-                    break;
-                case R.id.btn1_2:
-                case R.id.btn2_2:
-                case R.id.btn3_2:
-                case R.id.btn4_2:
-                case R.id.btn5_2:
-                    startActivity(new Intent(getApplicationContext(),GameMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_3:
-                case R.id.btn2_3:
-                case R.id.btn3_3:
-                case R.id.btn4_3:
-                case R.id.btn5_3:
-                    startActivity(new Intent(getApplicationContext(),ShareMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_4:
-                case R.id.btn2_4:
-                case R.id.btn3_4:
-                case R.id.btn4_4:
-                case R.id.btn5_4:
-                     startActivity(new Intent(getApplicationContext(),RecyleMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_5:
-                case R.id.btn2_5:
-                case R.id.btn3_5:
-                case R.id.btn4_5:
-                case R.id.btn5_5:
-                    //startActivity(new Intent(getApplicationContext(),QuitMain.class));
-                    break;
-                default:
-                    break;
-            }
-        }
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quit);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_quit);
         setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                /*Intent intent = new Intent(MainActivity.this, CameraMain.class);
-//                startActivity(intent);*/
-//                ImageView menuImage=new ImageView(MainActivity.this);
-//                menuImage.setImageResource(R.drawable.ui_buttons);
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//
-//            }
-//        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_quit);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

@@ -11,61 +11,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+
+import team9.camp.microsoft.ecospy.cameraPack.CameraMain;
+import team9.camp.microsoft.ecospy.tool.NavSwitcher;
 
 public class ShareMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private ImageButton btn1,btn2,btn3,btn4,btn5;
-    private View.OnClickListener navBar=new View.OnClickListener(){
+    private Button share;
+    private View.OnClickListener navBar=new NavSwitcher(ShareMain.this,3);
 
-        @Override
-        public void onClick(View v) {
-            switch(v.getId()){
-                case R.id.btn1_1:
-                case R.id.btn2_1:
-                case R.id.btn3_1:
-                case R.id.btn4_1:
-                case R.id.btn5_1:
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    finish();
-                    break;
-                case R.id.btn1_2:
-                case R.id.btn2_2:
-                case R.id.btn3_2:
-                case R.id.btn4_2:
-                case R.id.btn5_2:
-                    startActivity(new Intent(getApplicationContext(), GameMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_3:
-                case R.id.btn2_3:
-                case R.id.btn3_3:
-                case R.id.btn4_3:
-                case R.id.btn5_3:
-                    //startActivity(new Intent(getApplicationContext(),ShareMain.class));
-                   // finish();
-                    break;
-                case R.id.btn1_4:
-                case R.id.btn2_4:
-                case R.id.btn3_4:
-                case R.id.btn4_4:
-                case R.id.btn5_4:
-                     startActivity(new Intent(getApplicationContext(),RecyleMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_5:
-                case R.id.btn2_5:
-                case R.id.btn3_5:
-                case R.id.btn4_5:
-                case R.id.btn5_5:
-                    startActivity(new Intent(getApplicationContext(), QuitMain.class));
-                    finish();
-                    break;
-                default:
-                    break;
-            }
-        }
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +63,18 @@ public class ShareMain extends AppCompatActivity
         btn3.setOnClickListener(navBar);
         btn4.setOnClickListener(navBar);
         btn5.setOnClickListener(navBar);
+
+        share=(Button)findViewById(R.id.share);
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sentItent=new Intent();
+                sentItent.setAction(Intent.ACTION_SEND);
+                sentItent.putExtra(Intent.EXTRA_TEXT, "http://ihome.ust.hk/~xzhuah/Education/ecospy.html");
+                sentItent.setType("text/plain");
+                startActivity(sentItent);
+            }
+        });
     }
 
     @Override

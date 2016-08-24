@@ -29,13 +29,13 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
 
-            android:text="原来如此"/>
+            android:text="@string/verify_know"/>
         <Button
             android:id="@+id/recycleBtn"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
 
-            android:text="我要回收"/>
+            android:text="@string/verify_recycle"/>
 
     </LinearLayout>
 </LinearLayout>

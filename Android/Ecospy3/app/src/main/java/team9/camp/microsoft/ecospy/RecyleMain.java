@@ -11,60 +11,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import team9.camp.microsoft.ecospy.cameraPack.CameraMain;
+import team9.camp.microsoft.ecospy.game.ItemMap;
+import team9.camp.microsoft.ecospy.tool.NavSwitcher;
+import team9.camp.microsoft.ecospy.tool.UserPO;
 
 public class RecyleMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private ImageButton btn1,btn2,btn3,btn4,btn5;
-    private View.OnClickListener navBar=new View.OnClickListener(){
+    private GridLayout mitemlist;
+    private ImageView[] allImage=new ImageView[100];
+    private TextView[] allName=new TextView[100];
+    private TextView[] allNum=new TextView[100];
+    private View.OnClickListener navBar=new NavSwitcher(RecyleMain.this,4);
 
-        @Override
-        public void onClick(View v) {
-            switch(v.getId()){
-                case R.id.btn1_1:
-                case R.id.btn2_1:
-                case R.id.btn3_1:
-                case R.id.btn4_1:
-                case R.id.btn5_1:
-                   startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    finish();
-                    break;
-                case R.id.btn1_2:
-                case R.id.btn2_2:
-                case R.id.btn3_2:
-                case R.id.btn4_2:
-                case R.id.btn5_2:
-                    startActivity(new Intent(getApplicationContext(), GameMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_3:
-                case R.id.btn2_3:
-                case R.id.btn3_3:
-                case R.id.btn4_3:
-                case R.id.btn5_3:
-                    startActivity(new Intent(getApplicationContext(), ShareMain.class));
-                    finish();
-                    break;
-                case R.id.btn1_4:
-                case R.id.btn2_4:
-                case R.id.btn3_4:
-                case R.id.btn4_4:
-                case R.id.btn5_4:
-                  // startActivity(new Intent(getApplicationContext(),RecyleMain.class));
-                    break;
-                case R.id.btn1_5:
-                case R.id.btn2_5:
-                case R.id.btn3_5:
-                case R.id.btn4_5:
-                case R.id.btn5_5:
-                   startActivity(new Intent(getApplicationContext(), QuitMain.class));
-                    finish();
-                    break;
-                default:
-                    break;
-            }
-        }
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,6 +70,333 @@ public class RecyleMain extends AppCompatActivity
         btn3.setOnClickListener(navBar);
         btn4.setOnClickListener(navBar);
         btn5.setOnClickListener(navBar);
+
+        allNum[0]=(TextView)findViewById(R.id.bag_des0);
+        allNum[1]=(TextView)findViewById(R.id.bag_des1);
+        allNum[2]=(TextView)findViewById(R.id.bag_des2);
+        allNum[3]=(TextView)findViewById(R.id.bag_des3);
+        allNum[4]=(TextView)findViewById(R.id.bag_des4);
+        allNum[5]=(TextView)findViewById(R.id.bag_des5);
+        allNum[6]=(TextView)findViewById(R.id.bag_des6);
+        allNum[7]=(TextView)findViewById(R.id.bag_des7);
+        allNum[8]=(TextView)findViewById(R.id.bag_des8);
+        allNum[9]=(TextView)findViewById(R.id.bag_des9);
+        allNum[10]=(TextView)findViewById(R.id.bag_des10);
+        allNum[11]=(TextView)findViewById(R.id.bag_des11);
+        allNum[12]=(TextView)findViewById(R.id.bag_des12);
+        allNum[13]=(TextView)findViewById(R.id.bag_des13);
+        allNum[14]=(TextView)findViewById(R.id.bag_des14);
+        allNum[15]=(TextView)findViewById(R.id.bag_des15);
+        allNum[16]=(TextView)findViewById(R.id.bag_des16);
+        allNum[17]=(TextView)findViewById(R.id.bag_des17);
+        allNum[18]=(TextView)findViewById(R.id.bag_des18);
+        allNum[19]=(TextView)findViewById(R.id.bag_des19);
+        allNum[20]=(TextView)findViewById(R.id.bag_des20);
+        allNum[21]=(TextView)findViewById(R.id.bag_des21);
+        allNum[22]=(TextView)findViewById(R.id.bag_des22);
+        allNum[23]=(TextView)findViewById(R.id.bag_des23);
+        allNum[24]=(TextView)findViewById(R.id.bag_des24);
+        allNum[25]=(TextView)findViewById(R.id.bag_des25);
+        allNum[26]=(TextView)findViewById(R.id.bag_des26);
+        allNum[27]=(TextView)findViewById(R.id.bag_des27);
+        allNum[28]=(TextView)findViewById(R.id.bag_des28);
+        allNum[29]=(TextView)findViewById(R.id.bag_des29);
+        allNum[30]=(TextView)findViewById(R.id.bag_des30);
+        allNum[31]=(TextView)findViewById(R.id.bag_des31);
+        allNum[32]=(TextView)findViewById(R.id.bag_des32);
+        allNum[33]=(TextView)findViewById(R.id.bag_des33);
+        allNum[34]=(TextView)findViewById(R.id.bag_des34);
+        allNum[35]=(TextView)findViewById(R.id.bag_des35);
+        allNum[36]=(TextView)findViewById(R.id.bag_des36);
+        allNum[37]=(TextView)findViewById(R.id.bag_des37);
+        allNum[38]=(TextView)findViewById(R.id.bag_des38);
+        allNum[39]=(TextView)findViewById(R.id.bag_des39);
+        allNum[40]=(TextView)findViewById(R.id.bag_des40);
+        allNum[41]=(TextView)findViewById(R.id.bag_des41);
+        allNum[42]=(TextView)findViewById(R.id.bag_des42);
+        allNum[43]=(TextView)findViewById(R.id.bag_des43);
+        allNum[44]=(TextView)findViewById(R.id.bag_des44);
+        allNum[45]=(TextView)findViewById(R.id.bag_des45);
+        allNum[46]=(TextView)findViewById(R.id.bag_des46);
+        allNum[47]=(TextView)findViewById(R.id.bag_des47);
+        allNum[48]=(TextView)findViewById(R.id.bag_des48);
+        allNum[49]=(TextView)findViewById(R.id.bag_des49);
+        allNum[50]=(TextView)findViewById(R.id.bag_des50);
+        allNum[51]=(TextView)findViewById(R.id.bag_des51);
+        allNum[52]=(TextView)findViewById(R.id.bag_des52);
+        allNum[53]=(TextView)findViewById(R.id.bag_des53);
+        allNum[54]=(TextView)findViewById(R.id.bag_des54);
+        allNum[55]=(TextView)findViewById(R.id.bag_des55);
+        allNum[56]=(TextView)findViewById(R.id.bag_des56);
+        allNum[57]=(TextView)findViewById(R.id.bag_des57);
+        allNum[58]=(TextView)findViewById(R.id.bag_des58);
+        allNum[59]=(TextView)findViewById(R.id.bag_des59);
+        allNum[60]=(TextView)findViewById(R.id.bag_des60);
+        allNum[61]=(TextView)findViewById(R.id.bag_des61);
+        allNum[62]=(TextView)findViewById(R.id.bag_des62);
+        allNum[63]=(TextView)findViewById(R.id.bag_des63);
+        allNum[64]=(TextView)findViewById(R.id.bag_des64);
+        allNum[65]=(TextView)findViewById(R.id.bag_des65);
+        allNum[66]=(TextView)findViewById(R.id.bag_des66);
+        allNum[67]=(TextView)findViewById(R.id.bag_des67);
+        allNum[68]=(TextView)findViewById(R.id.bag_des68);
+        allNum[69]=(TextView)findViewById(R.id.bag_des69);
+        allNum[70]=(TextView)findViewById(R.id.bag_des70);
+        allNum[71]=(TextView)findViewById(R.id.bag_des71);
+        allNum[72]=(TextView)findViewById(R.id.bag_des72);
+        allNum[73]=(TextView)findViewById(R.id.bag_des73);
+        allNum[74]=(TextView)findViewById(R.id.bag_des74);
+        allNum[75]=(TextView)findViewById(R.id.bag_des75);
+        allNum[76]=(TextView)findViewById(R.id.bag_des76);
+        allNum[77]=(TextView)findViewById(R.id.bag_des77);
+        allNum[78]=(TextView)findViewById(R.id.bag_des78);
+        allNum[79]=(TextView)findViewById(R.id.bag_des79);
+        allNum[80]=(TextView)findViewById(R.id.bag_des80);
+        allNum[81]=(TextView)findViewById(R.id.bag_des81);
+        allNum[82]=(TextView)findViewById(R.id.bag_des82);
+        allNum[83]=(TextView)findViewById(R.id.bag_des83);
+        allNum[84]=(TextView)findViewById(R.id.bag_des84);
+        allNum[85]=(TextView)findViewById(R.id.bag_des85);
+        allNum[86]=(TextView)findViewById(R.id.bag_des86);
+        allNum[87]=(TextView)findViewById(R.id.bag_des87);
+        allNum[88]=(TextView)findViewById(R.id.bag_des88);
+        allNum[89]=(TextView)findViewById(R.id.bag_des89);
+        allNum[90]=(TextView)findViewById(R.id.bag_des90);
+        allNum[91]=(TextView)findViewById(R.id.bag_des91);
+        allNum[92]=(TextView)findViewById(R.id.bag_des92);
+        allNum[93]=(TextView)findViewById(R.id.bag_des93);
+        allNum[94]=(TextView)findViewById(R.id.bag_des94);
+        allNum[95]=(TextView)findViewById(R.id.bag_des95);
+        allNum[96]=(TextView)findViewById(R.id.bag_des96);
+        allNum[97]=(TextView)findViewById(R.id.bag_des97);
+        allNum[98]=(TextView)findViewById(R.id.bag_des98);
+        allNum[99]=(TextView)findViewById(R.id.bag_des99);
+
+
+        allImage[0]=(ImageView)findViewById(R.id.bag_image0);
+        allName[0]=(TextView)findViewById(R.id.bag_name0);
+        allImage[1]=(ImageView)findViewById(R.id.bag_image1);
+        allName[1]=(TextView)findViewById(R.id.bag_name1);
+        allImage[2]=(ImageView)findViewById(R.id.bag_image2);
+        allName[2]=(TextView)findViewById(R.id.bag_name2);
+        allImage[3]=(ImageView)findViewById(R.id.bag_image3);
+        allName[3]=(TextView)findViewById(R.id.bag_name3);
+        allImage[4]=(ImageView)findViewById(R.id.bag_image4);
+        allName[4]=(TextView)findViewById(R.id.bag_name4);
+        allImage[5]=(ImageView)findViewById(R.id.bag_image5);
+        allName[5]=(TextView)findViewById(R.id.bag_name5);
+        allImage[6]=(ImageView)findViewById(R.id.bag_image6);
+        allName[6]=(TextView)findViewById(R.id.bag_name6);
+        allImage[7]=(ImageView)findViewById(R.id.bag_image7);
+        allName[7]=(TextView)findViewById(R.id.bag_name7);
+        allImage[8]=(ImageView)findViewById(R.id.bag_image8);
+        allName[8]=(TextView)findViewById(R.id.bag_name8);
+        allImage[9]=(ImageView)findViewById(R.id.bag_image9);
+        allName[9]=(TextView)findViewById(R.id.bag_name9);
+        allImage[10]=(ImageView)findViewById(R.id.bag_image10);
+        allName[10]=(TextView)findViewById(R.id.bag_name10);
+        allImage[11]=(ImageView)findViewById(R.id.bag_image11);
+        allName[11]=(TextView)findViewById(R.id.bag_name11);
+        allImage[12]=(ImageView)findViewById(R.id.bag_image12);
+        allName[12]=(TextView)findViewById(R.id.bag_name12);
+        allImage[13]=(ImageView)findViewById(R.id.bag_image13);
+        allName[13]=(TextView)findViewById(R.id.bag_name13);
+        allImage[14]=(ImageView)findViewById(R.id.bag_image14);
+        allName[14]=(TextView)findViewById(R.id.bag_name14);
+        allImage[15]=(ImageView)findViewById(R.id.bag_image15);
+        allName[15]=(TextView)findViewById(R.id.bag_name15);
+        allImage[16]=(ImageView)findViewById(R.id.bag_image16);
+        allName[16]=(TextView)findViewById(R.id.bag_name16);
+        allImage[17]=(ImageView)findViewById(R.id.bag_image17);
+        allName[17]=(TextView)findViewById(R.id.bag_name17);
+        allImage[18]=(ImageView)findViewById(R.id.bag_image18);
+        allName[18]=(TextView)findViewById(R.id.bag_name18);
+        allImage[19]=(ImageView)findViewById(R.id.bag_image19);
+        allName[19]=(TextView)findViewById(R.id.bag_name19);
+        allImage[20]=(ImageView)findViewById(R.id.bag_image20);
+        allName[20]=(TextView)findViewById(R.id.bag_name20);
+        allImage[21]=(ImageView)findViewById(R.id.bag_image21);
+        allName[21]=(TextView)findViewById(R.id.bag_name21);
+        allImage[22]=(ImageView)findViewById(R.id.bag_image22);
+        allName[22]=(TextView)findViewById(R.id.bag_name22);
+        allImage[23]=(ImageView)findViewById(R.id.bag_image23);
+        allName[23]=(TextView)findViewById(R.id.bag_name23);
+        allImage[24]=(ImageView)findViewById(R.id.bag_image24);
+        allName[24]=(TextView)findViewById(R.id.bag_name24);
+        allImage[25]=(ImageView)findViewById(R.id.bag_image25);
+        allName[25]=(TextView)findViewById(R.id.bag_name25);
+        allImage[26]=(ImageView)findViewById(R.id.bag_image26);
+        allName[26]=(TextView)findViewById(R.id.bag_name26);
+        allImage[27]=(ImageView)findViewById(R.id.bag_image27);
+        allName[27]=(TextView)findViewById(R.id.bag_name27);
+        allImage[28]=(ImageView)findViewById(R.id.bag_image28);
+        allName[28]=(TextView)findViewById(R.id.bag_name28);
+        allImage[29]=(ImageView)findViewById(R.id.bag_image29);
+        allName[29]=(TextView)findViewById(R.id.bag_name29);
+        allImage[30]=(ImageView)findViewById(R.id.bag_image30);
+        allName[30]=(TextView)findViewById(R.id.bag_name30);
+        allImage[31]=(ImageView)findViewById(R.id.bag_image31);
+        allName[31]=(TextView)findViewById(R.id.bag_name31);
+        allImage[32]=(ImageView)findViewById(R.id.bag_image32);
+        allName[32]=(TextView)findViewById(R.id.bag_name32);
+        allImage[33]=(ImageView)findViewById(R.id.bag_image33);
+        allName[33]=(TextView)findViewById(R.id.bag_name33);
+        allImage[34]=(ImageView)findViewById(R.id.bag_image34);
+        allName[34]=(TextView)findViewById(R.id.bag_name34);
+        allImage[35]=(ImageView)findViewById(R.id.bag_image35);
+        allName[35]=(TextView)findViewById(R.id.bag_name35);
+        allImage[36]=(ImageView)findViewById(R.id.bag_image36);
+        allName[36]=(TextView)findViewById(R.id.bag_name36);
+        allImage[37]=(ImageView)findViewById(R.id.bag_image37);
+        allName[37]=(TextView)findViewById(R.id.bag_name37);
+        allImage[38]=(ImageView)findViewById(R.id.bag_image38);
+        allName[38]=(TextView)findViewById(R.id.bag_name38);
+        allImage[39]=(ImageView)findViewById(R.id.bag_image39);
+        allName[39]=(TextView)findViewById(R.id.bag_name39);
+        allImage[40]=(ImageView)findViewById(R.id.bag_image40);
+        allName[40]=(TextView)findViewById(R.id.bag_name40);
+        allImage[41]=(ImageView)findViewById(R.id.bag_image41);
+        allName[41]=(TextView)findViewById(R.id.bag_name41);
+        allImage[42]=(ImageView)findViewById(R.id.bag_image42);
+        allName[42]=(TextView)findViewById(R.id.bag_name42);
+        allImage[43]=(ImageView)findViewById(R.id.bag_image43);
+        allName[43]=(TextView)findViewById(R.id.bag_name43);
+        allImage[44]=(ImageView)findViewById(R.id.bag_image44);
+        allName[44]=(TextView)findViewById(R.id.bag_name44);
+        allImage[45]=(ImageView)findViewById(R.id.bag_image45);
+        allName[45]=(TextView)findViewById(R.id.bag_name45);
+        allImage[46]=(ImageView)findViewById(R.id.bag_image46);
+        allName[46]=(TextView)findViewById(R.id.bag_name46);
+        allImage[47]=(ImageView)findViewById(R.id.bag_image47);
+        allName[47]=(TextView)findViewById(R.id.bag_name47);
+        allImage[48]=(ImageView)findViewById(R.id.bag_image48);
+        allName[48]=(TextView)findViewById(R.id.bag_name48);
+        allImage[49]=(ImageView)findViewById(R.id.bag_image49);
+        allName[49]=(TextView)findViewById(R.id.bag_name49);
+        allImage[50]=(ImageView)findViewById(R.id.bag_image50);
+        allName[50]=(TextView)findViewById(R.id.bag_name50);
+        allImage[51]=(ImageView)findViewById(R.id.bag_image51);
+        allName[51]=(TextView)findViewById(R.id.bag_name51);
+        allImage[52]=(ImageView)findViewById(R.id.bag_image52);
+        allName[52]=(TextView)findViewById(R.id.bag_name52);
+        allImage[53]=(ImageView)findViewById(R.id.bag_image53);
+        allName[53]=(TextView)findViewById(R.id.bag_name53);
+        allImage[54]=(ImageView)findViewById(R.id.bag_image54);
+        allName[54]=(TextView)findViewById(R.id.bag_name54);
+        allImage[55]=(ImageView)findViewById(R.id.bag_image55);
+        allName[55]=(TextView)findViewById(R.id.bag_name55);
+        allImage[56]=(ImageView)findViewById(R.id.bag_image56);
+        allName[56]=(TextView)findViewById(R.id.bag_name56);
+        allImage[57]=(ImageView)findViewById(R.id.bag_image57);
+        allName[57]=(TextView)findViewById(R.id.bag_name57);
+        allImage[58]=(ImageView)findViewById(R.id.bag_image58);
+        allName[58]=(TextView)findViewById(R.id.bag_name58);
+        allImage[59]=(ImageView)findViewById(R.id.bag_image59);
+        allName[59]=(TextView)findViewById(R.id.bag_name59);
+        allImage[60]=(ImageView)findViewById(R.id.bag_image60);
+        allName[60]=(TextView)findViewById(R.id.bag_name60);
+        allImage[61]=(ImageView)findViewById(R.id.bag_image61);
+        allName[61]=(TextView)findViewById(R.id.bag_name61);
+        allImage[62]=(ImageView)findViewById(R.id.bag_image62);
+        allName[62]=(TextView)findViewById(R.id.bag_name62);
+        allImage[63]=(ImageView)findViewById(R.id.bag_image63);
+        allName[63]=(TextView)findViewById(R.id.bag_name63);
+        allImage[64]=(ImageView)findViewById(R.id.bag_image64);
+        allName[64]=(TextView)findViewById(R.id.bag_name64);
+        allImage[65]=(ImageView)findViewById(R.id.bag_image65);
+        allName[65]=(TextView)findViewById(R.id.bag_name65);
+        allImage[66]=(ImageView)findViewById(R.id.bag_image66);
+        allName[66]=(TextView)findViewById(R.id.bag_name66);
+        allImage[67]=(ImageView)findViewById(R.id.bag_image67);
+        allName[67]=(TextView)findViewById(R.id.bag_name67);
+        allImage[68]=(ImageView)findViewById(R.id.bag_image68);
+        allName[68]=(TextView)findViewById(R.id.bag_name68);
+        allImage[69]=(ImageView)findViewById(R.id.bag_image69);
+        allName[69]=(TextView)findViewById(R.id.bag_name69);
+        allImage[70]=(ImageView)findViewById(R.id.bag_image70);
+        allName[70]=(TextView)findViewById(R.id.bag_name70);
+        allImage[71]=(ImageView)findViewById(R.id.bag_image71);
+        allName[71]=(TextView)findViewById(R.id.bag_name71);
+        allImage[72]=(ImageView)findViewById(R.id.bag_image72);
+        allName[72]=(TextView)findViewById(R.id.bag_name72);
+        allImage[73]=(ImageView)findViewById(R.id.bag_image73);
+        allName[73]=(TextView)findViewById(R.id.bag_name73);
+        allImage[74]=(ImageView)findViewById(R.id.bag_image74);
+        allName[74]=(TextView)findViewById(R.id.bag_name74);
+        allImage[75]=(ImageView)findViewById(R.id.bag_image75);
+        allName[75]=(TextView)findViewById(R.id.bag_name75);
+        allImage[76]=(ImageView)findViewById(R.id.bag_image76);
+        allName[76]=(TextView)findViewById(R.id.bag_name76);
+        allImage[77]=(ImageView)findViewById(R.id.bag_image77);
+        allName[77]=(TextView)findViewById(R.id.bag_name77);
+        allImage[78]=(ImageView)findViewById(R.id.bag_image78);
+        allName[78]=(TextView)findViewById(R.id.bag_name78);
+        allImage[79]=(ImageView)findViewById(R.id.bag_image79);
+        allName[79]=(TextView)findViewById(R.id.bag_name79);
+        allImage[80]=(ImageView)findViewById(R.id.bag_image80);
+        allName[80]=(TextView)findViewById(R.id.bag_name80);
+        allImage[81]=(ImageView)findViewById(R.id.bag_image81);
+        allName[81]=(TextView)findViewById(R.id.bag_name81);
+        allImage[82]=(ImageView)findViewById(R.id.bag_image82);
+        allName[82]=(TextView)findViewById(R.id.bag_name82);
+        allImage[83]=(ImageView)findViewById(R.id.bag_image83);
+        allName[83]=(TextView)findViewById(R.id.bag_name83);
+        allImage[84]=(ImageView)findViewById(R.id.bag_image84);
+        allName[84]=(TextView)findViewById(R.id.bag_name84);
+        allImage[85]=(ImageView)findViewById(R.id.bag_image85);
+        allName[85]=(TextView)findViewById(R.id.bag_name85);
+        allImage[86]=(ImageView)findViewById(R.id.bag_image86);
+        allName[86]=(TextView)findViewById(R.id.bag_name86);
+        allImage[87]=(ImageView)findViewById(R.id.bag_image87);
+        allName[87]=(TextView)findViewById(R.id.bag_name87);
+        allImage[88]=(ImageView)findViewById(R.id.bag_image88);
+        allName[88]=(TextView)findViewById(R.id.bag_name88);
+        allImage[89]=(ImageView)findViewById(R.id.bag_image89);
+        allName[89]=(TextView)findViewById(R.id.bag_name89);
+        allImage[90]=(ImageView)findViewById(R.id.bag_image90);
+        allName[90]=(TextView)findViewById(R.id.bag_name90);
+        allImage[91]=(ImageView)findViewById(R.id.bag_image91);
+        allName[91]=(TextView)findViewById(R.id.bag_name91);
+        allImage[92]=(ImageView)findViewById(R.id.bag_image92);
+        allName[92]=(TextView)findViewById(R.id.bag_name92);
+        allImage[93]=(ImageView)findViewById(R.id.bag_image93);
+        allName[93]=(TextView)findViewById(R.id.bag_name93);
+        allImage[94]=(ImageView)findViewById(R.id.bag_image94);
+        allName[94]=(TextView)findViewById(R.id.bag_name94);
+        allImage[95]=(ImageView)findViewById(R.id.bag_image95);
+        allName[95]=(TextView)findViewById(R.id.bag_name95);
+        allImage[96]=(ImageView)findViewById(R.id.bag_image96);
+        allName[96]=(TextView)findViewById(R.id.bag_name96);
+        allImage[97]=(ImageView)findViewById(R.id.bag_image97);
+        allName[97]=(TextView)findViewById(R.id.bag_name97);
+        allImage[98]=(ImageView)findViewById(R.id.bag_image98);
+        allName[98]=(TextView)findViewById(R.id.bag_name98);
+        allImage[99]=(ImageView)findViewById(R.id.bag_image99);
+        allName[99]=(TextView)findViewById(R.id.bag_name99);
+
+
+        int[] ownedID= UserPO.getOwnedId();
+        for(int i=0;i<ownedID.length;i++){
+            try {
+                allImage[ownedID[i]].setBackgroundResource(ItemMap.Id2RID.get(ownedID[i]));
+                allName[ownedID[i]].setText("" + ItemMap.Id2Name.get(ownedID[i]));
+                allNum[ownedID[i]].setText("" + UserPO.itembag.get(ownedID[i]));
+            }catch (Exception e){
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     @Override

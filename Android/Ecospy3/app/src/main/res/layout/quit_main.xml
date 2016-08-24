@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="我"
+                android:text="@string/nav_me"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -59,7 +59,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="游戏"
+                android:text="@string/nav_game"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -78,7 +78,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="分享"
+                android:text="@string/nav_share"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="已回收"
+                android:text="@string/nav_item"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -116,7 +116,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="离开"
+                android:text="@string/nav_quit"
                 android:gravity="center"/>
         </LinearLayout>
 

@@ -14,7 +14,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:paddingTop="0dp"
         android:src="@drawable/logo3" />
 
@@ -29,6 +29,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="共筑美好地球" />
+        android:text="@string/logo_word" />
 
 </LinearLayout>

@@ -5,31 +5,31 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="环保扫一扫" />
+            android:title="@string/left_scan" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="白云风景区" />
+            android:title="@string/left_view" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="绿色小知识" />
+            android:title="@string/left_knowledge" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="回收工具箱" />
+            android:title="@string/left_tool" />
     </group>
 
-    <item android:title="团结力量大">
+    <item android:title="@string/left_title">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="生态手牵手" />
+                android:title="@string/left_hand" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="蓝天伴我行" />
+                android:title="@string/left_sky" />
         </menu>
     </item>
 

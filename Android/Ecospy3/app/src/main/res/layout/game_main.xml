@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="team9.camp.microsoft.ecospy.GameMain"
+    tools:context=".game.GameMain"
     tools:showIn="@layout/app_bar_game">
 
     <ImageView
@@ -115,22 +115,22 @@
             android:gravity="center"
             />
     </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageButton
-                android:id="@+id/result2"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/result2"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp" />-->
 
-            <TextView
-                android:id="@+id/number2"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="center"/>
-        </LinearLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/number2"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="0"-->
+                <!--android:gravity="center"/>-->
+        <!--</LinearLayout>-->
 
 
 
@@ -160,7 +160,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="我"
+                android:text="@string/nav_me"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -179,7 +179,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="游戏"
+                android:text="@string/nav_game"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -198,7 +198,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="分享"
+                android:text="@string/nav_share"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -217,7 +217,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="已回收"
+                android:text="@string/nav_item"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -236,7 +236,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="离开"
+                android:text="@string/nav_quit"
                 android:gravity="center"/>
         </LinearLayout>
 

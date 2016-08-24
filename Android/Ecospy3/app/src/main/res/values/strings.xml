@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Ecospy</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
 
@@ -17,7 +17,113 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
+    <string name="permission_rationale" translatable="false">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+
+
+
+
+
+
+
+    <string name="camera_begin_spy">Begin Spy</string>
+
+    <string name="nav_me">Me</string>
+    <string name="nav_game">Game</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_item">Item</string>
+    <string name="nav_quit">Quit</string>
+
+    <string name="logo_word">Build a Beautiful World</string>
+    <string name="item_title">My Collected Item</string>
+    <string name="item_unknown">Unknown</string>
+    <string name="item_unknown_material" translatable="false">0</string>
+
+    <string name="share_click">Click Here to Share</string>
+    <string name="verify_know">I see</string>
+    <string name="verify_recycle">Recycle It</string>
+
+    <string name="left_scan">Eco Scan</string>
+    <string name="left_view">White Cloud Scenic Spot</string>
+    <string name="left_knowledge">Green Common Sense</string>
+    <string name="left_tool">Recycle Tool Kit</string>
+
+    <string name="left_title">Unity is strength</string>
+    <string name="left_hand">Eco Hand in Hand</string>
+    <string name="left_sky">Blue Sky with Me</string>
+
+
+    <string name="intro_link_elect" translatable="false">http://baike.baidu.com/subview/1379716/1379716.htm</string>
+    <string name="intro_title_elect">Electronics </string>
+    <!--<string name="intro_elect">电子废弃物中所蕴含的金属，尤其是贵金属，其品位是天然矿藏的几十倍甚至几百倍回收成本一般低于开采自然矿床。有研究分析结果显示，1吨随意搜集的电子板卡中，可以分离出143kg铜、0.5kg黄金、40.8kg铁、29.5kg铅、2.0kg锡、18.1kg镍、10.0kg锑</string>-->
+    <string name="intro_elect">The concentration of metals contained in electronic waste, especially for precious metal, is usually tens to hundards of times higher than that in natural deposits.Accoding to the research, human can extract 143 kg of copper, 0.5 kg of gold, 40.8 kg, 29.5 kg, 2.0 kg tin, lead, iron nickel 18.1 kg and 10.0 kg antimony from 1 ton of electronic boards</string>
+    <string name="intro_recycle_elect">Recycle 1 electronic device，Obtain 1 glass, 1 metal, 1 plastic</string>
+
+
+    <string name="intro_link_comp" translatable="false">https://www.wastereduction.gov.hk/tc/workplace/crp_intro.htm</string>
+    <string name="intro_title_comp">Laptop</string>
+    <!--<string name="intro_comp">電腦產品含有可以對人體和環境有害的物質。因此，我們不應隨意更換電腦，以助減少產生電腦廢物。如果確實有需要更換，則應盡量把舊電腦循環再用和回收再造。電腦所含的零件和物料，例如金屬和塑膠等，其實可以回收再用。一些廢棄的電腦只要修理妥當，更可翻新成二手機再用。</string>-->
+    <string name="intro_comp">Computer products contains substances, which can be harmful to the human body and environment.Therefore, we should not arbitrarily change the computer, to help reduce waste produce computers.If there are need to change, should try to use old computer recycling and recycled.Computer parts and materials, such as metal and plastic, etc., it can be recycled.Some obsolete computers as long as persist, can be restored as used to use again.</string>
+    <string name="intro_recycle_comp">Recycle 1 laptop，Obtain 1 glass, 2 metal, 1 plastic</string>
+
+
+    <string name="intro_link_paper" translatable="false">http://wenku.baidu.com/link?url=h32vM-HUE92HEYgV4mIK_xF83Uiy01A1IBCxyNnGk2xyxcy_f60iBWbakHtVT5Pl-HnLoCXk0kVIj5rPuroEH6sDEJoFgunljcPzB6_yKru</string>
+    <string name="intro_title_paper">Paper</string>
+    <string name="intro_recycle_paper">Recycle paper，Obtain 3 wood</string>
+    <!-- <string name="intro_paper">造1吨纸需要约3立方米的木材，相当于二十几棵树木，我国年造纸消耗木材大约在1000万立方米。因此，回收废纸制造再生纸可以缓解造纸原料不足的状况。此外，废纸还有许多其他的综合利用途径，减少污染的同时，还充分发挥了废纸的再利用价值。</string>-->
+    <string name="intro_paper">Made 1 ton of paper needs about 3 cubic meters of wood, the equivalent of two trees, Chinese paper consumption wood around 10 million cubic meters.Therefore, recycling waste paper manufacturing recycled paper can relieve the status of the paper making raw material shortage.In addition, the comprehensive utilization of waste paper there are many other ways to reduce pollution at the same time, also make full use of the waste paper recycling value.</string>
+
+    <string name="intro_link_can" translatable="false">http://www.epd.gov.hk/epd/sc_chi/environmentinhk/waste/eco_responsibility/gcrp_pilot_ssp_ha.html</string>
+    <string name="intro_title_can">Bottle or Cup</string>
+    <string name="intro_recycle_can">Recycle glass，Obtain 3 glass</string>
+    <!--<string name="intro_can">玻璃，玲瓏剔透，無毒可重用，壓碎後又可製成環保磚或鋪路，可是它的回收價值比紙皮、膠樽還要低</string>-->
+    <string name="intro_can">Glass, exquisitely carved, non-toxic reusable, crushed brick or pave the way and can be made into environmental protection, but its recovery value lower than paper and plastic bottles</string>
+
+    <string name="intro_link_wood" translatable="false">https://theinitium.com/article/20151118-hongkong-woodrecycle01/</string>
+    <string name="intro_title_wood">Wood</string>
+    <string name="intro_recycle_wood">Recycle wood item，Obtain 5 wood</string>
+    <!--<string name="intro_wood">绝大多数木卡板的最终命运，是被视为无用的垃圾，送往垃圾堆填区。</string>-->
+    <string name="intro_wood">The vast majority of the ultimate fate of wood card board is to be regarded as useless junk and sent to landfills.</string>
+
+    <string name="intro_link_shoes" translatable="false">http://topick.hket.com/article/1431966/%E8%88%8A%E9%9E%8B%E6%95%91%E5%91%BD%20%E7%99%BC%E5%8B%95%E6%B8%AF%E4%BA%BA%E5%85%A8%E5%9F%8E%E6%8D%90%E9%9E%8B</string>
+    <string name="intro_title_shoes">Shoes</string>
+    <string name="intro_recycle_shoes">Recycle 1 pair of shoes，Obtain 3 plastic</string>
+    <!--<string name="intro_shoes">舊鞋！誰家沒有？非洲千萬赤腳兒童每日面對沙蚤咬腳的奪命威脅，有大學生發起全城捐舊鞋運動，各區市民可集合舊鞋一併送交大學收集站，再由協辦物流公司轉送非洲。</string>-->
+    <string name="intro_shoes">Old shoes!Who have no? Africa barefoot children are faced with threat from sand flea, there are college students launched the old shoes donation campaign, the city district residents can set collection stations, old shoes were sent to the university by joint logistics company again transferred to Africa.</string>
+
+    <string name="intro_link_bag" translatable="false">http://baike.baidu.com/view/1749752.htm</string>
+    <string name="intro_title_bag">Bags</string>
+    <string name="intro_recycle_bag">Recycle plastic item，Obtain 3 plastic</string>
+    <!--<string name="intro_bag">随着塑料制品消费量不断增大，废弃塑料也不断增多。目前我国废弃塑料主要为塑料薄膜、塑料丝及编织品、泡沫塑料、塑料包装箱及容器、日用塑料制品、塑料袋和农用地膜等。</string>-->
+    <string name="intro_bag">With increasing plastic products consumption, waste plastic is also growing.At present, the waste plastics mainly for plastic film, plastic yarn and fabric, foam, plastic packaging and containers, daily plastic products, plastic bags, agricultural film and so on.</string>
+
+    <string name="intro_link_plastic" translatable="false">http://baike.baidu.com/view/1749752.htm</string>
+    <string name="intro_title_plastic">Plastic</string>
+    <string name="intro_recycle_plastic">Recycle plastic item，Obtain 3 plastic</string>
+    <!--<string name="intro_plastic">我国汽车用塑料年消费量已达40万吨，电子电器及家电配套用塑料年消费量已达100多万吨，这些产品报废后成了废塑料的重要来源之一。据了解，2011年，我国废塑料产生量约为2800万吨，2012年为3413万吨。</string>-->
+    <string name="intro_plastic">China automotive plastic consumption has reached 400000 tons, and electronic and electrical appliances with plastic consumption has more than 100 100 tons, the products scrapped after became one of the important sources of waste plastics.It is understood that in 2011, discharge waste plastics in China is about 28 million tons, 34.13 million tons in 2012</string>
+
+    <string name="intro_link_cloth" translatable="false">http://baike.baidu.com/view/1749752.htm</string>
+    <string name="intro_title_cloth">Clothes</string>
+    <string name="intro_recycle_cloth">Recycle clothes，Obtain 2 wood</string>
+    <!--<string name="intro_cloth">綠色和平指出香港人每年棄置11萬噸紡織物，相等於每分鐘拋棄約1400件T-shirt，足以鋪滿25000個香港大球場。</string>-->
+    <string name="intro_cloth">Greenpeace points out that Hong Kong people discard 110000 tons of fabric a year, equivalent to abandon a minute about 1400 pieces of t-shirts, enough to covered 25000 Hong Kong stadium.</string>
+
+    <string name="intro_link_window" translatable="false">http://www.epd.gov.hk/epd/sc_chi/environmentinhk/waste/eco_responsibility/gcrp_pilot_ssp_ha.html</string>
+    <string name="intro_title_window">Glass</string>
+    <string name="intro_recycle_window">Recycle window，Obtain 3 glasses</string>
+    <!--<string name="intro_window">玻璃，玲瓏剔透，無毒可重用，壓碎後又可製成環保磚或鋪路，可是它的回收價值比紙皮、膠樽還要低</string>-->
+    <string name="intro_window">Glass, exquisitely carved, non-toxic reusable, crushed brick or pave the way and can be made into environmental protection, but its recovery value lower than paper, plastic bottles</string>
+
+    <string name="intro_link_metal" translatable="false">http://baike.baidu.com/view/2013629.htm</string>
+    <string name="intro_title_metal">Metal</string>
+    <string name="intro_recycle_metal">Recycle metal item，Obtain 3 metal</string>
+    <!--<string name="intro_metal">金属回收是指从废旧金属中分离出来的有用物质经过物理或机械加工成为再生利用的制品，是从回收、拆解、到再生利用的一条产业链。</string>-->
+    <string name="intro_metal">Metal recycling is separated from the scrap metal useful substances by physical or mechanical processing be recycled products, from recycling, dismantling, to recycling is one of the industrial chain.</string>
+
+    <string name="none_recycle">No recyclable item</string>
+
+    <string name="wifiRemider">Please connect to the internet first</string>
 </resources>
