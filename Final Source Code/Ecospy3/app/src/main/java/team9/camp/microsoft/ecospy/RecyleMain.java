@@ -102,11 +102,11 @@ public class RecyleMain extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view_recyle);
         navigationView.setNavigationItemSelectedListener(this);
 
-        btn1=(ImageButton)findViewById(R.id.btn4_1);
-        btn2=(ImageButton)findViewById(R.id.btn4_2);
-        btn3=(ImageButton)findViewById(R.id.btn4_3);
-        btn4=(ImageButton)findViewById(R.id.btn4_4);
-        btn5=(ImageButton)findViewById(R.id.btn4_5);
+        btn1=findViewById(R.id.btn4_1);
+        btn2=findViewById(R.id.btn4_2);
+        btn3=findViewById(R.id.btn4_3);
+        btn4=findViewById(R.id.btn4_4);
+        btn5=findViewById(R.id.btn4_5);
         btn1.setOnClickListener(navBar);
         btn2.setOnClickListener(navBar);
         btn3.setOnClickListener(navBar);
